@@ -1,0 +1,6 @@
+[submodule "Noiton2_backend"]
+	path = Noiton2_backend
+	url = https://github.com/IvanSuiyama/noiton2.0_Backend
+[submodule "Noiton2_frontend"]
+	path = Noiton2_frontend
+	url = https://github.com/IvanSuiyama/noiton2_frontend

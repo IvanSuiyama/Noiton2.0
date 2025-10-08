@@ -44,3 +44,8 @@
 | 24 | Baixo | Como usuário, quero adicionar e consultar tarefas por comando de voz via assistentes virtuais. | 10 | 3 |
 | 25 | Baixo | Como usuário, quero ganhar pontos e conquistas por concluir tarefas para aumentar meu engajamento. | 8 | 3 |
 | 26 | Baixo | Como usuário, quero visualizar dicas de produtividade no app para aproveitar melhor as funcionalidades. | 4 | 3 |
+
+## Atalhos para outros repositórios do projeto
+
+- [Noiton2_backend](https://github.com/IvanSuiyama/noiton2.0_Backend)
+- [Noiton2_frontend](https://github.com/IvanSuiyama/noiton2_frontend)
