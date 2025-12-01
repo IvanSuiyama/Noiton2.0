@@ -32,18 +32,20 @@
 
 ---
 
-## 🚀 Sprint 3 — Funcionalidades Avançadas e Inteligência
+## 🚀 Sprint 3 — Funcionalidades Avançadas e Inteligência (Ajustada)
 
 | Rank | Prioridade | User Story | Estimativa (h) | Sprint |
 |------|-------------|-------------|----------------|---------|
 | 19 | Médio | Como usuário, quero autenticar com Google ou redes sociais para facilitar login. | 8 | 3 |
-| 20 | Alto | Como usuário, quero acessar e editar tarefas offline para não depender de internet. | 12 | 3 |
+| 20 | Alto | Como usuário, quero acessar e editar tarefas offline com sincronização automática ao ficar online. | 12 | 3 |
 | 21 | Alto | Como usuário, quero configurar tarefas recorrentes (diárias, semanais, mensais). | 10 | 3 |
-| 22 | Baixo | Como usuário, quero receber alertas inteligentes para reorganizar tarefas atrasadas. | 6 | 3 |
-| 23 | Baixo | Como usuário, quero exportar listas e relatórios em PDF ou planilhas. | 6 | 3 |
-| 24 | Baixo | Como usuário, quero adicionar e consultar tarefas por comando de voz via assistentes virtuais. | 10 | 3 |
-| 25 | Baixo | Como usuário, quero ganhar pontos e conquistas por concluir tarefas para aumentar meu engajamento. | 8 | 3 |
-| 26 | Baixo | Como usuário, quero visualizar dicas de produtividade no app para aproveitar melhor as funcionalidades. | 4 | 3 |
+| 22 | Alto | Como usuário, quero receber notificações automáticas sobre prazos e alterações. | 10 | 3 |
+| 23 | Alto | Como usuário, quero ganhar pontos e desbloquear recompensas ao concluir tarefas (lojinha de temas e avatares). | 8 | 3 |
+| 24 | Médio | Como usuário, quero consultar e criar tarefas por comando de voz usando IA (comandos fixos). | 10 | 3 |
+| 25 | Médio | Como usuário, quero acessar um manual completo de uso do app para entender todas as funcionalidades. | 6 | 3 |
+| 26 | Alto | Como administrador, quero uma tela de ADM para gerenciar usuários, tarefas e configurações do app. | 12 | 3 |
+
+---
 
 ## Atalhos para outros repositórios do projeto
 
