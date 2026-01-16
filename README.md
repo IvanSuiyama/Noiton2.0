@@ -1,51 +1,362 @@
-# 📱 Projeto Noiton - Backlog do Produto
+# 📱 Noiton2 - Task Management App
 
-## 🎯 Sprint 1 — Funcionalidades Essenciais
+> Aplicativo mobile completo de gerenciamento de tarefas com workspaces colaborativos, IA por voz, sincronização offline e sistema de gamificação.
 
-| Rank | Prioridade | User Story | Estimativa (h) | Sprint |
-|------|------------|------------|----------------|--------|
-| 1 | Alto | Como usuário, quero criar uma conta com e-mail e senha para acessar o app. | 8 | 1 |
-| 2 | Alto | Como usuário, quero criar, editar e excluir tarefas para organizar minhas atividades. | 10 | 1 |
-| 3 | Alto | Como líder de equipe, quero criar workspaces e adicionar membros para organizar a colaboração. | 12 | 1 |
-| 4 | Médio | Como usuário, quero compartilhar tarefas com membros do workspace para permitir colaboração básica. | 6 | 1 |
+**⚠️ Desafio Técnico:** Desenvolvido sem dependência de bibliotecas prontas do React Native - todos os módulos nativos foram implementados manualmente em Java.
 
 ---
 
-## 🧩 Sprint 2 — Funcionalidades de Produtividade e Colaboração
+## 🎯 Sobre o Projeto
 
-| Rank | Prioridade | User Story | Estimativa (h) | Sprint |
-|------|-------------|-------------|----------------|---------|
-| 5 | Alto | Como usuário, quero ver todas as minhas tarefas no painel inicial com destaque para as mais urgentes e recentes. | 8 | 2 |
-| 6 | Alto | Como usuário, quero atribuir responsáveis às tarefas para organizar responsabilidades. | 8 | 2 |
-| 7 | Alto | Como usuário, quero receber notificações automáticas sobre prazos e alterações. | 10 | 2 |
-| 8 | Alto | Como usuário, quero visualizar e gerenciar tarefas em um calendário integrado ao app. | 12 | 2 |
-| 9 | Médio | Como usuário, quero sincronizar minhas tarefas com o Google Calendar para centralizar compromissos. | 10 | 2 |
-| 10 | Médio | Como usuário, quero organizar tarefas em listas personalizadas e aplicar filtros básicos para facilitar busca. | 8 | 2 |
-| 11 | Médio | Como usuário, quero aplicar filtros avançados por palavra-chave, prazo e responsável. | 8 | 2 |
-| 12 | Médio | Como usuário, quero comentar e anexar arquivos às tarefas para facilitar a colaboração. | 8 | 2 |
-| 13 | Alto | Como líder de equipe, quero visualizar estatísticas de progresso e métricas da equipe. | 10 | 2 |
-| 14 | Médio | Como usuário, quero fixar tarefas prioritárias no topo da lista. | 4 | 2 |
-| 15 | Médio | Como usuário, quero marcar uma tarefa como concluída por meio de um checkbox. | 5 | 2 |
-| 16 | Médio | Como usuário, quero personalizar a interface com tema claro e escuro. | 6 | 2 |
-| 17 | Médio | Como usuário, quero definir níveis de acesso ao compartilhar uma tarefa. | 6 | 2 |
-| 18 | Médio | Como usuário, quero denunciar conteúdos inadequados ou spam para manter o ambiente seguro. | 4 | 2 |
+Noiton2 é a segunda iteração de um sistema completo de gerenciamento de tarefas, inspirado no Notion, mas focado em produtividade individual e colaborativa. Desenvolvido como projeto acadêmico do 5º semestre (FATEC-SJC), o aplicativo implementa funcionalidades avançadas de apps comerciais, incluindo sincronização offline, assistente de IA, gamificação e administração de conteúdo.
+
+**Diferencial:** Todo o projeto foi desenvolvido **solo**, com implementação manual de módulos nativos para máximo controle e aprendizado técnico.
 
 ---
 
-## 🚀 Sprint 3 — Funcionalidades Avançadas e Inteligência (Ajustada)
+## ✨ Funcionalidades Principais
 
-| Rank | Prioridade | User Story | Estimativa (h) | Sprint |
-|------|-------------|-------------|----------------|---------|
-| 19 | Médio | Como usuário, quero autenticar com Google ou redes sociais para facilitar login. | 8 | 3 |
-| 20 | Alto | Como usuário, quero acessar e editar tarefas offline com sincronização automática ao ficar online. | 12 | 3 |
-| 21 | Alto | Como usuário, quero configurar tarefas recorrentes (diárias, semanais, mensais). | 10 | 3 |
-| 22 | Alto | Como usuário, quero receber notificações automáticas sobre prazos e alterações. | 10 | 3 |
-| 23 | Alto | Como usuário, quero ganhar pontos e desbloquear recompensas ao concluir tarefas (lojinha de temas e avatares). | 8 | 3 |
-| 24 | Médio | Como usuário, quero consultar e criar tarefas por comando de voz usando IA (comandos fixos). | 10 | 3 |
-| 25 | Médio | Como usuário, quero acessar um manual completo de uso do app para entender todas as funcionalidades. | 6 | 3 |
-| 26 | Alto | Como administrador, quero uma tela de ADM para gerenciar usuários, tarefas e configurações do app. | 12 | 3 |
+### 🔄 Sincronização & Offline
+- ✅ **Cache offline inteligente** com SQLite local
+- ✅ **Sincronização automática via WiFi** (dados móveis não implementados por escolha)
+- ✅ Funcionamento 100% offline com sync quando reconectar
+
+### 🤖 Assistente de IA
+- ✅ **Criação de tarefas por voz** usando IA
+- ✅ **Consulta inteligente** de tarefas existentes
+- ✅ Processamento de linguagem natural
+
+### 👥 Workspaces Colaborativos
+- ✅ **Workspaces individuais** e **em equipe**
+- ✅ **Níveis de acesso granulares:**
+  - Visualização apenas
+  - Edição de tarefas
+  - Administração total
+- ✅ **Regras de negócio:**
+  - Apenas criador pode excluir tarefas próprias
+  - Apenas criador pode excluir workspace
+  - Permissões por usuário dentro do workspace
+
+### 🎮 Sistema de Gamificação
+- ✅ **Sistema de pontos** por conclusão de tarefas
+- ✅ **Loja de temas e ícones** customizáveis
+- ✅ Incentivo à produtividade através de recompensas visuais
+
+### 🔐 Autenticação & Segurança
+- ✅ **Login com Google** (OAuth 2.0)
+- ✅ Criação de conta tradicional
+- ✅ Sessões seguras com tokens JWT
+
+### 🛡️ Sistema de Moderação
+- ✅ **Sistema de denúncias funcional**
+- ✅ **Painel administrativo** para aprovação/reprovação de denúncias
+- ✅ Moderação de conteúdo inadequado
+
+### 📊 Métricas & Produtividade
+- ✅ **Dashboard individual** com estatísticas pessoais
+- ✅ **Métricas de equipe** em workspaces colaborativos
+- ✅ Visualização de progresso e tendências
+
+### 📋 Gestão de Tarefas
+- ✅ **CRUD completo** com validações
+- ✅ **Comentários** em tarefas
+- ✅ **Anexos:** 1 PDF + 1 imagem por tarefa
+- ✅ **Categorização** customizada por workspace
+- ✅ **Filtros avançados:** palavras-chave, categoria, data, status
+- ✅ **Tarefas recorrentes** (diária, semanal, mensal)
+- ✅ **Favoritos:** até 10 tarefas marcadas
+- ✅ **Fixar no topo:** até 3 tarefas prioritárias
+
+### 📅 Calendário & Notificações
+- ✅ **Calendário integrado** mostrando datas de criação
+- ✅ **Alertas de vencimento** próximo
+- ✅ **Integração com Google Calendar** (Agenda Android)
+- ✅ **Push notifications** para lembretes
+
+### 🎨 Interface & UX
+- ✅ **Sistema de temas responsivo** - altera globalmente
+- ✅ **4 cards superiores:** Workspaces | Membros | Métricas | Usuário
+- ✅ **2 cards informativos:** Lojinha | Ajuda
+- ✅ **Menu principal:** Home | Tarefas | Favoritos | Calendário
+- ✅ **Card de ajuda** explicando funcionalidades
+- ✅ Design intuitivo e moderno
 
 ---
+
+## 🏗️ Arquitetura Técnica
+
+### Frontend (Mobile)
+```
+React Native + Módulos Nativos Java
+├── UI Layer: React Native (TypeScript)
+├── Native Modules: Java (Android)
+│   ├── Sincronização offline
+│   ├── Notificações push
+│   ├── Integração com Google Calendar
+│   └── Gerenciamento de cache
+└── Local Database: SQLite
+    └── Cache offline de tarefas
+```
+
+### Backend (API REST)
+```
+Node.js + TypeScript
+├── Express.js (framework)
+├── JWT Authentication
+├── OAuth 2.0 (Google)
+├── Upload de arquivos (PDF/imagem)
+└── Integração com IA para processamento de voz
+```
+
+### Banco de Dados
+```
+PostgreSQL (local)
+├── Usuários & Autenticação
+├── Workspaces & Membros
+├── Tarefas & Categorias
+├── Comentários & Anexos
+├── Sistema de pontos & Loja
+├── Denúncias & Moderação
+└── Métricas & Logs
+```
+
+### Ferramentas Auxiliares
+```python
+# Script Python para troca automática de IPs
+# Facilita desenvolvimento em diferentes redes
+python change_ip.py --new-ip 192.168.1.100
+```
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Mobile
+- **React Native** - Framework mobile
+- **TypeScript** - Type safety
+- **Java** - Módulos nativos Android
+- **SQLite** - Cache local
+
+### Backend
+- **Node.js** - Runtime
+- **TypeScript** - Linguagem
+- **Express.js** - Framework web
+- **JWT** - Autenticação
+- **OAuth 2.0** - Login social
+
+### Banco de Dados
+- **PostgreSQL** - Banco relacional principal
+
+### Integrações
+- **Google Calendar API** - Integração com agenda
+- **IA (API externa)** - Processamento de voz
+- **Firebase Cloud Messaging** - Push notifications
+
+---
+
+## 🚀 Como Rodar o Projeto
+
+### Pré-requisitos
+```bash
+- Node.js 16+
+- PostgreSQL 14+
+- Android Studio (para emulador)
+- React Native CLI
+- Python 3.8+ (para script de IP)
+```
+
+### 1. Clone o Repositório
+```bash
+git clone https://github.com/IvanSuiyama/API5-Io.git
+cd API5-Io
+```
+
+### 2. Configure o Banco de Dados
+```sql
+-- Crie o banco no PostgreSQL
+CREATE DATABASE noiton2_db;
+
+-- Execute as migrations (se houver)
+-- ou importe o schema fornecido
+```
+
+### 3. Configure o Backend
+```bash
+cd backend
+npm install
+
+# Configure as variáveis de ambiente
+cp .env.example .env
+# Edite .env com suas credenciais:
+# - DATABASE_URL
+# - JWT_SECRET
+# - GOOGLE_CLIENT_ID
+# - GOOGLE_CLIENT_SECRET
+
+# Inicie o servidor
+npm run dev
+```
+
+### 4. Configure o Frontend
+```bash
+cd mobile
+npm install
+
+# Troque o IP do backend (se necessário)
+python ../scripts/change_ip.py --new-ip SEU_IP_LOCAL
+
+# Inicie o Metro Bundler
+npm start
+
+# Em outro terminal, rode no Android
+npm run android
+```
+
+### 5. (Opcional) Configurar IA
+```bash
+# Configure a API key da IA no .env do backend
+AI_API_KEY=sua_chave_aqui
+```
+
+---
+
+## 🎓 Desafios Técnicos Superados
+
+### 1. Desenvolvimento sem Bibliotecas Prontas
+**Desafio:** Restrição de não utilizar bibliotecas React Native prontas.
+
+**Solução:** Implementação manual de todos os módulos nativos em Java:
+- Sistema de cache offline com sincronização
+- Integração com Google Calendar
+- Sistema de notificações push
+- Gerenciamento de arquivos e uploads
+
+**Aprendizado:** Compreensão profunda da bridge React Native ↔ Java e arquitetura mobile nativa.
+
+---
+
+### 2. Sincronização Offline Robusta
+**Desafio:** Garantir consistência de dados entre cache local (SQLite) e servidor (PostgreSQL).
+
+**Solução:**
+- Implementação de sistema de versionamento de tarefas
+- Filas de sincronização com retry automático
+- Detecção de conflitos com estratégia "last-write-wins"
+- Sincronização apenas via WiFi para economizar dados móveis
+
+**Aprendizado:** Arquitetura offline-first e resolução de conflitos distribuídos.
+
+---
+
+### 3. Banco de Dados Gratuito para Produção
+**Desafio:** Serviços gratuitos online não atendiam requisitos de performance/confiabilidade.
+
+**Solução:** 
+- PostgreSQL local com URL configurável via variável de ambiente
+- Arquitetura preparada para fácil migração para serviços cloud (AWS RDS, Supabase, etc)
+- Script Python para facilitar troca de IPs em desenvolvimento
+
+**Aprendizado:** Flexibilidade arquitetural e preparação para deploy em diferentes ambientes.
+
+---
+
+### 4. Sistema de Permissões Granulares
+**Desafio:** Implementar níveis de acesso complexos sem bibliotecas de ACL.
+
+**Solução:**
+- Modelagem de relacionamentos N:N (User ↔ Workspace)
+- Middleware de verificação de permissões no backend
+- Validações no frontend para UX responsiva
+- Regras de negócio claras (apenas criador pode excluir)
+
+**Aprendizado:** Design de sistemas multiusuário com segurança em camadas.
+
+---
+
+## 📊 Modelagem de Dados (Resumida)
+
+```
+Users                    Workspaces               Tasks
+├── id                   ├── id                   ├── id
+├── name                 ├── name                 ├── title
+├── email                ├── creator_id (FK)      ├── description
+├── google_id            ├── type (individual     ├── workspace_id (FK)
+├── points                      /team)            ├── creator_id (FK)
+└── created_at           └── created_at           ├── category_id (FK)
+                                                  ├── due_date
+UserWorkspace (M:N)      Categories               ├── status
+├── user_id (FK)         ├── id                   ├── is_recurring
+├── workspace_id (FK)    ├── name                 ├── attachment_pdf
+├── role (viewer         ├── workspace_id (FK)    ├── attachment_image
+       /editor/admin)    └── color                └── created_at
+└── joined_at
+                         Comments                 Favorites
+                         ├── id                   ├── user_id (FK)
+                         ├── task_id (FK)         ├── task_id (FK)
+                         ├── user_id (FK)         └── pinned (boolean)
+                         ├── content
+                         └── created_at           Reports
+                                                  ├── id
+                         Themes                   ├── task_id (FK)
+                         ├── id                   ├── reporter_id (FK)
+                         ├── name                 ├── reason
+                         ├── price (points)       ├── status
+                         ├── preview_image        └── reviewed_by (FK)
+                         └── is_unlocked
+```
+
+---
+
+## 📈 Métricas do Projeto
+
+- **Linhas de Código:** ~15.000+ (estimativa)
+- **Tempo de Desenvolvimento:** 1 semestre acadêmico
+- **Desenvolvedores:** 1 (solo)
+- **Telas Implementadas:** 15+
+- **Módulos Nativos Java:** 8+
+- **Endpoints API:** 40+
+- **Tabelas no Banco:** 12+
+
+---
+
+## 🎯 Funcionalidades Futuras (Roadmap)
+
+- [ ] Sincronização via dados móveis (4G/5G)
+- [ ] Integração com Trello/Notion (importação de tarefas)
+- [ ] Modo escuro automático por horário
+- [ ] Suporte a subtarefas (tarefas aninhadas)
+- [ ] Chat em tempo real dentro de workspaces
+- [ ] Versão web (Progressive Web App)
+- [ ] Deploy em produção (Google Play Store)
+- [ ] Relatórios exportáveis (PDF/Excel)
+
+---
+
+## 📝 Licença
+
+Este projeto foi desenvolvido para fins acadêmicos como parte do curso de Desenvolvimento de Software Multiplataforma da FATEC-SJC.
+
+---
+
+## 👨‍💻 Autor
+
+**Ivan Suiyama Silva**  
+Estudante de Desenvolvimento de Software Multiplataforma - FATEC-SJC  
+Foco em DevSecOps e Desenvolvimento Full Stack
+
+📧 ivan.suiya@gmail.com  
+💼 [LinkedIn](https://linkedin.com/in/ivan-suiyama-silva-248042186)  
+🐙 [GitHub](https://github.com/IvanSuiyama)
+
+---
+
+## 🙏 Agradecimentos
+
+- **FATEC-SJC** - Pelo incentivo a criação do aplicativo
+
+---
+
+**⭐ Se este projeto te ajudou de alguma forma, considere dar uma estrela!**
 
 ## Atalhos para outros repositórios do projeto
 
